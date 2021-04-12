@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--주석 : 술저장고 레이아웃-->
+
+
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#eb993c">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"/>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/ID_KoreaBeer"
+                android:padding="3dp"
+                android:src="@drawable/final_koreabeer"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+            <ImageButton
+                android:id="@+id/ID_OverSeasBeer"
+                android:padding="3dp"
+                android:src="@drawable/final_overseasbeer"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/ID_Soju"
+                android:paddingVertical="3dp"
+                android:src="@drawable/final_soju"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+            <ImageButton
+                android:id="@+id/ID_Cacktail"
+                android:paddingVertical="3dp"
+                android:src="@drawable/final_cacktail"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+        </TableRow>
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/ID_Makgulri"
+                android:padding="3dp"
+                android:src="@drawable/final_makgulri"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+            <ImageButton
+                android:id="@+id/ID_Wine"
+                android:padding="3dp"
+                android:src="@drawable/final_wine"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:background="#000000"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

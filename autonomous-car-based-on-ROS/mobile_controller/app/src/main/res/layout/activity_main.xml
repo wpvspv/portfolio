@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //위쪽 전체 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"> //건들 ㄴㄴ
+
+        //위쪽 왼쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            //음성인식 텍스트
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voice control"
+                android:textSize="20dp" />
+
+            //음성인식 스위치 레이아웃
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                //음성인식 On
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off"/>
+
+                //음성인식 스위치
+                <Switch
+                    android:id="@+id/voiceControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                //음성인식 Off
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //위쪽 가운데 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            //나가기 버튼
+
+
+        </LinearLayout>
+
+
+        //위쪽 오른쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Exit"
+                android:id="@+id/exit_btn"
+                android:gravity="center"
+                android:textSize="25dp"/>
+            <!--
+            //자율주행 텍스트
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto Drive Mode"
+                android:textSize="20dp"/>
+
+            //자율주행 스위치 레이아웃
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                //자율주행 On
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off"/>
+
+                //자율주행 스위치
+                <Switch
+                    android:id="@+id/autoDriveMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                //자율주행 Off
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"/>
+
+            </LinearLayout>
+            -->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    //가운데 전체 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        //가운데 왼쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            //좌회전 버튼
+            <ImageButton
+                android:id="@+id/left"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/left_button"/>
+
+            //우회전 버튼
+            <ImageButton
+                android:id="@+id/right"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/right_button"/>
+
+
+        </LinearLayout>
+
+        //가운데 가운데 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            //사진 들어있는 레이아웃
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                //android:background="@drawable/camera_screen">
+                <!--
+                <WebView
+                    android:layout_width="800dp"
+                    android:layout_height="600dp"
+                    android:id="@+id/stream">
+                </WebView>
+                -->
+
+                <VideoView
+                    android:layout_width="640dp"
+                    android:layout_height="480dp"
+                    android:id="@+id/stream">
+
+                </VideoView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //가운데 오른쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            //차량 전진 버튼
+            <ImageButton
+                android:id="@+id/go"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/up_button"/>
+
+            //차량 후진 버튼
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/down_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    //아래 전체 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        //아래 왼쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            //속도 표시
+            <TextView
+                android:id="@+id/left_speedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="100"
+                android:background="@drawable/border"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        //아래 가운데 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            //속도텍스트와 버튼 들어있는 레이아웃
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                //속도 표시 텍스트뷰가 위치한 레이아웃
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speed"
+                        android:textSize="25dp"/>
+
+                </LinearLayout>
+
+                //속도값과 증가, 감속 버튼이 있는 레이아웃
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //속도 증가 버튼
+                    <ImageButton
+                        android:id="@+id/speedUp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/speed_up_button"/>
+
+                    //속도 표시
+                    <TextView
+                        android:id="@+id/speedView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="100"
+                        android:visibility="gone"
+                        android:textSize="30dp" />
+
+                    //속도 감소 버튼
+                    <ImageButton
+                        android:id="@+id/speedDown"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/speed_down_button"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //아래 왼쪽 레이아웃
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            //속도 표시
+            <TextView
+                android:id="@+id/right_speedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="100"
+                android:background="@drawable/border"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

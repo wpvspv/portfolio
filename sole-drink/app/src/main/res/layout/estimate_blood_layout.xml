@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--주석 : 주량 측정 레이아웃-->
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+        </LinearLayout>
+        <TextView
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별 선택"
+            />
+        <RadioGroup
+            android:id="@+id/ID_blood_radiogroup"
+            android:layout_column="1"
+            android:layout_row="1"
+            >
+
+            <RadioButton
+                android:id="@+id/ID_blood_man"
+                android:text="남성"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:id="@+id/ID_blood_woman"
+                android:text="여성"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RadioGroup>
+        <TextView
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="체중(kg)"
+            />
+        <EditText
+            android:id="@+id/ID_blood_weight"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="몸무게를 입력해주세요."
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음주량(ml)"
+            />
+
+        <EditText
+            android:id="@+id/ID_blood_volume"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="마신 음주량을 입력해주세요."
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알코올 도수(%)"/>
+
+        <EditText
+            android:id="@+id/ID_blood_Concentration"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="20%일 경우 20으로입력"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음주 종료 후 지난시간"
+            />
+
+        <EditText
+            android:id="@+id/ID_blood_time"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ex 1,2,3(1.5안됌)"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_column="2"
+            android:layout_row="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간" />
+
+        <Button
+            android:id="@+id/ID_blood_check"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혈중 알코올 확인"/>
+
+    </GridLayout>
+</LinearLayout>

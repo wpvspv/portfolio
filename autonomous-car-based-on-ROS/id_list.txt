@@ -1,0 +1,11 @@
+음성인식 스위치 : voiceControl
+자율주행 스위치 : autoDriveMode
+차량 전진 버튼 : go
+차량 후진 버튼 : back
+속도 표시 : speedView
+속도 증가 버튼 : speedUp
+속도 감소 버튼 : speedDown
+좌회전 버튼 : left
+우회전 버튼 : right
+
+위젯 : 총 8개

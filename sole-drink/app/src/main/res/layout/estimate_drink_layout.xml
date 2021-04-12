@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--주석 : 술한잔 레이아웃-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+        </LinearLayout>
+
+        <!--주석 : 술한잔 레이아웃 : 버튼 제외 위쪽 레이아웃 3개 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <!--주석 : 술한잔 레이아웃 : 왼쪽 레이아웃-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ID_Now_liquor"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/final_soju"/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/ID_bottle1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                        <ImageView
+                            android:id="@+id/ID_bottle2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                    </TableRow>
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/ID_bottle3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                        <ImageView
+                            android:id="@+id/ID_bottle4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                    </TableRow>
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/ID_bottle5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                        <ImageView
+                            android:id="@+id/ID_bottle6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+                <ImageButton
+                    android:id="@+id/ID_btn_Camera"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="사진 찍기"
+                    android:src="@drawable/camera_emoticon"
+                    android:scaleType="centerInside"
+                    />
+                <ImageButton
+                    android:src="@drawable/icon_folder"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btn_album"
+                    android:scaleType="fitXY"/>
+
+
+            </LinearLayout>
+            <!--주석 : 술한잔 레이아웃 : 중앙 레이아웃 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/ID_Check_Now_Volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="현재 마신량 : "
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ID_Check_Now_Volume_Zan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="0병 0잔"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <ImageButton
+                    android:id="@+id/ID_btn_OneShot"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/final_sojucup"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+            <!--주석 : 술한잔 레이아웃 : 오른쪽 레이아웃-->
+            <TableLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/ID_cup1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                    <ImageView
+                        android:id="@+id/ID_cup2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/ID_cup3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                    <ImageView
+                        android:id="@+id/ID_cup4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/ID_cup5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                    <ImageView
+                        android:id="@+id/ID_cup6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/ID_cup7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                    <ImageView
+                        android:id="@+id/ID_cup8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/final_sojucup"/>
+                </TableRow>
+
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/ID_Initialization"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="초기화"
+                        />
+
+                </TableRow>
+                <TableRow>
+                    <ImageButton
+                        android:background="#FFFFFF"
+                        android:src="@drawable/icon_kakao"
+                        android:id="@+id/ID_kakaorink"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerInside"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+        <!--주석 : 술한잔 레이아웃 : 밑의 버튼 2개 레이아웃-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--주석 : 술한잔 레이아웃 : 소주맥주 측정 변경 버튼-->
+            <ImageButton
+                android:id="@+id/ID_btn_SojuCup"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_change"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/ID_Camera"
+                android:layout_width="90dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
